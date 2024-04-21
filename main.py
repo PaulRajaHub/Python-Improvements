@@ -1,16 +1,16 @@
 import random
 
-def greet(name):
-    greetings = [
+def greet_person(person_name):
+    greeting_options = [
         "Hello",
         "Hi",
         "Greetings",
         "Welcome",
         "Hey there"
     ]
-    # Randomly select a greeting
-    greeting = random.choice(greetings)
-    print(f"{greeting}, {name}!")
+    # Choose a random greeting from the list
+    selected_greeting = random.choice(greeting_options)
+    print(f"{selected_greeting}, {person_name}!")
 
-# Testing the function with "World"
-greet("World")
+# Test the function by greeting "World"
+greet_person("World")
